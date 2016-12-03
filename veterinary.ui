@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>veterinary</class>
+ <widget class="QMainWindow" name="veterinary">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Veterinaria</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../prize-badge-with-paw-print.png</normaloff>../prize-badge-with-paw-print.png</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#veterinary{
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QTabWidget" name="TabWidget_4">
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-image: url(&quot;/home/jimz/Downloads/Ingenieria_Software/fondoVet2.jpg&quot;);
+}
+QLineEdit{
+	background: #ffffff;
+	
+}
+QLabel{
+	background: rgba(255, 255, 255, 0); 
+}
+QTableWidget{
+	background: #ffffff;
+}
+QPushButton{
+	background: #bbcbe5;
+}</string>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Rounded</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="elideMode">
+       <enum>Qt::ElideNone</enum>
+      </property>
+      <widget class="QWidget" name="tab_1">
+       <attribute name="title">
+        <string>Registro Clientes</string>
+       </attribute>
+       <widget class="QTableWidget" name="registerCTableWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>189</y>
+          <width>661</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>125</number>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Apellido1</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Apellido2</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Direccion</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Celular</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>C.P</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>E-mail</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Telefono</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>9</y>
+          <width>52</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="nameCLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>9</y>
+          <width>127</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>10</y>
+          <width>21</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>C.P.</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="cpCLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>10</y>
+          <width>127</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>C.P.</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="entryCPushButton">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lastname1CLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>38</y>
+          <width>127</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Apellido 1</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>38</y>
+          <width>62</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Apellido 1</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="emailCLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>39</y>
+          <width>127</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E-mail</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>39</y>
+          <width>40</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>E-mail</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>67</y>
+          <width>62</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Apellido 2</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lastname2CLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>68</y>
+          <width>127</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Apellido 2</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="phoneCLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>69</y>
+          <width>127</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Telefono</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>68</y>
+          <width>54</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Telefono</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="addressCLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>99</y>
+          <width>127</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Direccion</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>98</y>
+          <width>59</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Direccion</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="celphoneCLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>130</y>
+          <width>127</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Celular</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>82</x>
+          <y>129</y>
+          <width>44</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Celular</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="searchCLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>140</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Buscar</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="editCPushButton">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Editar</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="deleteCPushButton">
+        <property name="geometry">
+         <rect>
+          <x>670</x>
+          <y>80</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="clearCPushButton">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>80</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Limpiar</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Registro de Perros</string>
+       </attribute>
+       <widget class="QLineEdit" name="ageDLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>109</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Edad</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="imageDLabel">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>40</y>
+          <width>211</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 5px;
+border: 2px solid black;
+background: #ffffff;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="entryDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>50</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingresar</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="nameOwnerDComboBox">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>170</y>
+          <width>131</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="deleteDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>140</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="raceDLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>79</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Raza</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="genderDLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>139</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sexo</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="editDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>50</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Editar</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="uploadDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>210</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Subir</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="registerDTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>49</x>
+          <y>271</y>
+          <width>691</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>128</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Raza</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Edad</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Sexo</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Dueño</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ID perro</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLineEdit" name="searchDLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>220</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Buscar</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="nameDogDLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>49</y>
+          <width>131</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="clearDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>140</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Limpiar</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Chat</string>
+       </attribute>
+       <widget class="QLineEdit" name="chatLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>430</y>
+          <width>551</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 5px;
+border: 2px solid black;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="frame">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="chatTextBrowser">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>711</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 5px;
+border: 2px solid black;
+background: #ffffff;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCerrar_sesion">
+   <property name="text">
+    <string>Cerrar sesion</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>nameCLineEdit</tabstop>
+  <tabstop>lastname1CLineEdit</tabstop>
+  <tabstop>lastname2CLineEdit</tabstop>
+  <tabstop>addressCLineEdit</tabstop>
+  <tabstop>celphoneCLineEdit</tabstop>
+  <tabstop>cpCLineEdit</tabstop>
+  <tabstop>emailCLineEdit</tabstop>
+  <tabstop>phoneCLineEdit</tabstop>
+  <tabstop>searchCLineEdit</tabstop>
+  <tabstop>entryCPushButton</tabstop>
+  <tabstop>editCPushButton</tabstop>
+  <tabstop>deleteCPushButton</tabstop>
+  <tabstop>registerCTableWidget</tabstop>
+  <tabstop>searchDLineEdit</tabstop>
+  <tabstop>nameDogDLineEdit</tabstop>
+  <tabstop>raceDLineEdit</tabstop>
+  <tabstop>ageDLineEdit</tabstop>
+  <tabstop>genderDLineEdit</tabstop>
+  <tabstop>nameOwnerDComboBox</tabstop>
+  <tabstop>uploadDPushButton</tabstop>
+  <tabstop>entryDPushButton</tabstop>
+  <tabstop>editDPushButton</tabstop>
+  <tabstop>deleteDPushButton</tabstop>
+  <tabstop>registerDTableWidget</tabstop>
+  <tabstop>chatTextBrowser</tabstop>
+  <tabstop>chatLineEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

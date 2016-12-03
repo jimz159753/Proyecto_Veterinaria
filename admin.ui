@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Admin</class>
+ <widget class="QMainWindow" name="Admin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>795</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Registro</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-image: url(&quot;/home/jimz/Downloads/Ingenieria_Software/fondoVet2.jpg&quot;);
+}
+QLineEdit{
+background-color: #ffffff;
+}
+QComboBox{
+background-color: #ffffff;
+}
+QPushButton{
+background: #bbcbe5;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>68</x>
+      <y>29</y>
+      <width>37</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nombre</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nameALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="accessibleDescription">
+     <string/>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <property name="cursorMoveStyle">
+     <enum>Qt::LogicalMoveStyle</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>389</x>
+      <y>29</y>
+      <width>65</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ID trabajador</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="idALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>30</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="entryAPushButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>30</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Ingresar</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>68</x>
+      <y>69</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apellido 1</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lastname1ALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>70</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>389</x>
+      <y>69</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RFC</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="rfcALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>70</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editAPushButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>90</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>68</x>
+      <y>109</y>
+      <width>46</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apellido 2</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lastname2ALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>110</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>389</x>
+      <y>111</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Telefono</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="phoneALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>112</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteAPushButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>150</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Eliminar</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>68</x>
+      <y>150</y>
+      <width>43</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Direccion</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="addressALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>150</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>389</x>
+      <y>150</y>
+      <width>62</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Organizacion</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="orgAComboBox">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>150</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Veterinaria</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Refugio</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>68</x>
+      <y>190</y>
+      <width>19</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>NSS</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="nssALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>190</y>
+      <width>133</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>230</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="registerATableWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>270</y>
+      <width>621</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <column>
+     <property name="text">
+      <string>Nombre</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Apellido1</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Apellido2</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Direccion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>NSS</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>ID trabajador</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>RFC</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Telefono</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Organizacion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Password</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLineEdit" name="passALineEdit">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>190</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>190</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="clearAPushButton">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>210</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Limpiar</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCambiar_sesion">
+   <property name="text">
+    <string>Cambiar sesion</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>nameALineEdit</tabstop>
+  <tabstop>lastname1ALineEdit</tabstop>
+  <tabstop>lastname2ALineEdit</tabstop>
+  <tabstop>addressALineEdit</tabstop>
+  <tabstop>nssALineEdit</tabstop>
+  <tabstop>idALineEdit</tabstop>
+  <tabstop>rfcALineEdit</tabstop>
+  <tabstop>phoneALineEdit</tabstop>
+  <tabstop>orgAComboBox</tabstop>
+  <tabstop>entryAPushButton</tabstop>
+  <tabstop>editAPushButton</tabstop>
+  <tabstop>deleteAPushButton</tabstop>
+  <tabstop>searchALineEdit</tabstop>
+  <tabstop>registerATableWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

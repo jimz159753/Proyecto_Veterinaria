@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>refuge</class>
+ <widget class="QMainWindow" name="refuge">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>797</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Refugio</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../prize-badge-with-paw-print.png</normaloff>../prize-badge-with-paw-print.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-image: url(&quot;/home/jimz/Downloads/Ingenieria_Software/fondoVet2.jpg&quot;);
+}
+QLineEdit{
+	background: #ffffff;
+	
+}
+QLabel{
+	background: rgba(255, 255, 255, 0); 
+}
+QTableWidget{
+	background: #ffffff;
+}
+QPushButton{
+	background: #bbcbe5;
+}
+QGroupBox{
+	background: rgba(255, 255, 255, 0); 
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Datos perro</string>
+       </attribute>
+       <widget class="QTableWidget" name="registerDDTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>270</y>
+          <width>631</width>
+          <height>192</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>157</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Ingreso</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Salida</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Servicio</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="imageDDLabel">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>287</width>
+          <height>188</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 5px;
+border: 2px solid black;
+background: #ffffff;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>50</y>
+          <width>181</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Servicios</string>
+        </property>
+        <widget class="QComboBox" name="servDDComboBox">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>80</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>Tratamiento medico</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Enfermedad general</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Vacunas</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Estetica</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Guarderia</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLineEdit" name="searchDDLineEdit">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>131</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Buscar | Ingresar</string>
+         </property>
+         <property name="frame">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="entryDDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>50</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ingreso</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="deleteDDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>140</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Eliminar</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="outDDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>50</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Salida</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="clearDDPushButton">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>140</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Limpiar</string>
+        </property>
+        <property name="autoDefault">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Datos cliente</string>
+       </attribute>
+       <widget class="QTableWidget" name="registerDCTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>140</y>
+          <width>661</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>130</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Apellido1</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Apellido2</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Direccion</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Celular</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>C.P</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>E-mail</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Telefono</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLineEdit" name="buscarDCLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>90</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="clearDCPushButton">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>10</y>
+          <width>71</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Limpiar</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Chat</string>
+       </attribute>
+       <widget class="QLineEdit" name="chatLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>430</y>
+          <width>551</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 5px;
+border: 2px solid black;
+background: #ffffff;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="chatTextBrowser">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>711</width>
+          <height>391</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius: 5px;
+border: 2px solid black;
+background: #ffffff;</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCerrar_sesion">
+   <property name="text">
+    <string>Cerrar sesion</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>searchDDLineEdit</tabstop>
+  <tabstop>servDDComboBox</tabstop>
+  <tabstop>entryDDPushButton</tabstop>
+  <tabstop>outDDPushButton</tabstop>
+  <tabstop>deleteDDPushButton</tabstop>
+  <tabstop>registerDDTableWidget</tabstop>
+  <tabstop>buscarDCLineEdit</tabstop>
+  <tabstop>registerDCTableWidget</tabstop>
+  <tabstop>chatTextBrowser</tabstop>
+  <tabstop>chatLineEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
