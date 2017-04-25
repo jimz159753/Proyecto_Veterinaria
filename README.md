@@ -1,1 +1,1 @@
-<center># Proyecto_Veterinaria</center>
+<p align="center"># Proyecto_Veterinaria</p>
